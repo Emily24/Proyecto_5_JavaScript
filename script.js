@@ -10,19 +10,87 @@ console.log(-1.123) */
 //Declarar variable
 let nombre = 'Emily'
 console.log(nombre)
+nombre = 'Rocio'
+console.log(nombre)
 
 let numero1 = 7
 let numero2 = 9
 let resultado = numero1 + numero2
 console.log('Resultado: ', resultado)
 
+//String - texto
+const ciudad = 'Bogotá'
+const pais = 'Colombia'
+console.log(ciudad, pais)
+
 //Declarar una constante
 const pi = 3.1416
 console.log(pi)
 
+//Lenguaje debidamente tipado
+//Int, float - numeros
+const sumaa = 5
+const edad = 20.5 
+const numeronegativo = -10
+console.log(sumaa,edad,numeronegativo)
+
+//Booleando = verdadero o falso
+let esVerde = true
+let esMorado = false
+
+//------Estructura de datos-------
+//Array - vectores - listas
+
+let listaDeNumeros = [20, -55, 100]
+console.log(listaDeNumeros)
+
+//Ver un elemento de la lista
+//console.log(listaDeNumeros[0])
+//console.log(listaDeNumeros[1])
+//console.log(listaDeNumeros[2])
+
+let listaCiudades = ["Bogotá", "Medellín", "Cali"]
+console.log(listaCiudades)
+
+let listaDeListas = [listaDeNumeros, listaCiudades]
+console.log(listaDeListas)
+
+//Acceder al dato "Medellín"
+console.log(listaDeListas[1][1])
+
+//JSON (JavaScript Object Notation) - Objetos
+// clave - valor
+let usuario = {
+    nombre: "Emily",
+    edad: 24,
+    ciudad: "Bogotá",
+    ubicacion :{
+        latitud: 1.535498,
+        longitud: -2.3452156
+    }
+}
+//console.log(usuario)
+//console.log(usuario.nombre)
+//console.log(usuario.ubicacion.latitud)
+
+//Tipos de datos vacios
+
+//null - nulo
+const espacioVacio = null
+
+//Undefined - Indefinido
+let noDefinido = undefined
+//console.log(usuario.apellido)
+
+//NaN -not a Number - No es un numero
+const noEsNumero = NaN
+const multiplicacion = 10 * 'hola'
+//console.log(multiplicacion)
 
 
-
+//-------Estructuras de control-----------
+//bucle - Proceso que se repite
+//loop - bucle infinito
 const listaAnimales = [
     "perro",
     "gato",
@@ -30,7 +98,6 @@ const listaAnimales = [
     "gallina",
     "lobo",
     "zorro"
-
 ]
 
 console.log('tamaño del array:', listaAnimales.length);
